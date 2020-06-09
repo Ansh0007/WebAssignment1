@@ -1,3 +1,5 @@
+ //Name : Ansh
+ //Javascript functions are created 
   var i = 1;
     num_Of_Question = 7;
     questions = new Array()
