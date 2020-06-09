@@ -117,3 +117,43 @@
 	      y[1].innerHTML = answerD[i];
 	}
 //score is updated only after clicking next or previous button not by clicking the answer and checking in order to know whether your answer is correct or not.
+function showScore() 
+	{
+		document.getElementById("myTable").style.fontSize = "25px"; 
+		document.getElementById("myTable").style.color = "red";
+		document.getElementById("myTable").style.backgroundColor = "yellow";        
+		document.getElementById('myTable').innerHTML="Your Score =" + score     	
+	}
+	
+	function checkAnswer() 
+	{
+	      var radios = document.getElementsByName("quiz");
+	      var option;
+		for (var j = 0; j < radios.length; j++) 
+		{
+		        if (radios[j].checked) 
+			{
+		          option = radios[j].value;
+		          if(i<=num_Of_Question)
+			  	  radios[j].checked = false;
+		          break;
+		        }
+		}
+		
+	        if (option == rightAnswer[i]) 
+		{
+			document.getElementById("myTable").style.fontSize = "15px"; 
+			document.getElementById("myTable").style.color = "red";
+			document.getElementById("myTable").style.backgroundColor = "yellow";      
+			document.getElementById('myTable').innerHTML="Congratulation! Your Answer is Correct"
+		        score = score + 1;
+				
+	        }
+			else
+			{
+				document.getElementById("myTable").style.fontSize = "15px"; 
+			document.getElementById("myTable").style.color = "red";
+			document.getElementById("myTable").style.backgroundColor = "yellow";      
+			document.getElementById('myTable').innerHTML="Bad Luck! Your Answer is Wrong"
+			}
+	}
