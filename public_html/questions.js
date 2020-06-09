@@ -2,6 +2,7 @@
  //Javascript functions are created 
   var i = 1;
     num_Of_Question = 7;
+   // arrays are created for displaying questions and there options
     questions = new Array()
     questions[1] = "What is the 5 digit Greatest No";
     questions[2] = "What is the 3 Digit Smallest No";
@@ -51,6 +52,7 @@
     rightAnswer[6] = 3;
     rightAnswer[7] = 1;
     var score = 0;
+    //functions are created for the buttons to work and to show score
     	function preQuestion() 
 	{
 		 
@@ -127,20 +129,20 @@ function showScore()
 		document.getElementById('myTable').innerHTML="Your Score =" + score     	
 	}
 	
-	function checkAnswer() 
-	{
-	      var radios = document.getElementsByName("quiz");
-	      var option;
-		for (var j = 0; j < radios.length; j++) 
-		{
-		        if (radios[j].checked) 
-			{
-		          option = radios[j].value;
-		          if(i<=num_Of_Question)
-			  	  radios[j].checked = false;
-		          break;
-		        }
-		}
+	//function checkAnswer() 
+	//{
+	  //    var radios = document.getElementsByName("quiz");
+	    //  var option;
+		//for (var j = 0; j < radios.length; j++) 
+		//{//
+		  //      if (radios[j].checked) 
+		//	{
+		  //        option = radios[j].value;
+		    //      if(i<=num_Of_Question)
+			//  	  radios[j].checked = false;
+		         // break;
+		       // }
+	//	}
 		
 	        if (option == rightAnswer[i]) 
 		{
