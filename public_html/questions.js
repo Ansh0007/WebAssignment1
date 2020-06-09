@@ -49,3 +49,49 @@
     rightAnswer[6] = 3;
     rightAnswer[7] = 1;
     var score = 0;
+    	function preQuestion() 
+	{
+		 
+		window.location.href = "\index.html";
+	}
+	
+	function nextQuestion() 
+	{
+	      var radios = document.getElementsByName("quiz");
+	      var option;
+		for (var j = 0; j < radios.length; j++) 
+		{
+		        if (radios[j].checked) 
+			{
+		          option = radios[j].value;
+		          if(i<=num_Of_Question)
+			  	  radios[j].checked = false;
+		          break;
+		        }
+		}
+	        if (option == rightAnswer[i]) 
+		{
+		        score = score + 1;
+	        }
+	        i++;
+		if (i > num_Of_Question) 
+		{
+	
+		     showScore();
+			i=1;
+		}
+	        var x = document.getElementById('myTable').rows
+		var y = x[0].cells
+		y[0].innerHTML = i + ".\t";
+		y[1].innerHTML = questions[i];
+		
+		getOptionA();
+	}
+
+	function getOptionA() 
+	{
+		var x = document.getElementById('myTable').rows
+	     	var y = x[1].cells
+		y[1].innerHTML = answerA[i];
+	        getOptionB();
+	}
