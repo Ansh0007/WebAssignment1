@@ -40,3 +40,12 @@
 	answerD[5] = "D) Cricket";
 	answerD[6] = "D) Canada";
 	answerD[7] = "D) 28";
+         rightAnswer = new Array()
+    rightAnswer[1] = 3;
+    rightAnswer[2] = 2;
+    rightAnswer[3] = 3;
+    rightAnswer[4] = 3;
+    rightAnswer[5] = 3;
+    rightAnswer[6] = 3;
+    rightAnswer[7] = 1;
+    var score = 0;
