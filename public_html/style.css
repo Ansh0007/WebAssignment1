@@ -3,7 +3,11 @@ CSS file cotains attributes for the display of page*/
 body {
   background-color: lightblue;
 }
-
+@media (max-width: 500px){
+	body{
+		background: black;
+	}
+}
 form
 {
 	width:300px; 
