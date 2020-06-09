@@ -1,0 +1,10 @@
+  var i = 1;
+    num_Of_Question = 7;
+    questions = new Array()
+    questions[1] = "What is the 5 digit Greatest No";
+    questions[2] = "What is the 3 Digit Smallest No";
+    questions[3] = "How many Alphabets in A-Z";
+    questions[4] = "What is National fruit of India";
+    questions[5] = "What is the National sport Of India";
+    questions[6] = "Most Population country in World ";
+    questions[7] = "How many sticks in Tiranga (Tricolor) wheel";
