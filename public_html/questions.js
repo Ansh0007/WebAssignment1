@@ -95,3 +95,25 @@
 		y[1].innerHTML = answerA[i];
 	        getOptionB();
 	}
+        	function getOptionB() 
+	{
+	      var x = document.getElementById('myTable').rows
+	      var y = x[2].cells
+	      y[1].innerHTML = answerB[i];
+	      getOptionC();
+	}
+
+	function getOptionC() 
+	{
+	      var x = document.getElementById('myTable').rows
+	      var y = x[3].cells
+	      y[1].innerHTML = answerC[i];
+		  getOptionD();
+	}
+	function getOptionD() 
+	{
+	      var x = document.getElementById('myTable').rows
+	      var y = x[4].cells
+	      y[1].innerHTML = answerD[i];
+	}
+//score is updated only after clicking next or previous button not by clicking the answer and checking in order to know whether your answer is correct or not.
