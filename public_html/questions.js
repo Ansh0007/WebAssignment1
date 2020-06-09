@@ -84,8 +84,8 @@
 		     showScore();
 			i=1;
 		}
-	        var x = document.getElementById('myTable').rows
-		var y = x[0].cells
+	        var x = document.getElementById('myTable').rows;
+		var y = x[0].cells;
 		y[0].innerHTML = i + ".\t";
 		y[1].innerHTML = questions[i];
 		
@@ -94,30 +94,30 @@
 
 	function getOptionA() 
 	{
-		var x = document.getElementById('myTable').rows
-	     	var y = x[1].cells
+		var x = document.getElementById('myTable').rows;
+	     	var y = x[1].cells;
 		y[1].innerHTML = answerA[i];
 	        getOptionB();
 	}
         	function getOptionB() 
 	{
-	      var x = document.getElementById('myTable').rows
-	      var y = x[2].cells
+	      var x = document.getElementById('myTable').rows;
+	      var y = x[2].cells;
 	      y[1].innerHTML = answerB[i];
 	      getOptionC();
 	}
 
 	function getOptionC() 
 	{
-	      var x = document.getElementById('myTable').rows
-	      var y = x[3].cells
+	      var x = document.getElementById('myTable').rows;
+	      var y = x[3].cells;
 	      y[1].innerHTML = answerC[i];
 		  getOptionD();
 	}
 	function getOptionD() 
 	{
-	      var x = document.getElementById('myTable').rows
-	      var y = x[4].cells
+	      var x = document.getElementById('myTable').rows;
+	      var y = x[4].cells;
 	      y[1].innerHTML = answerD[i];
 	}
 //score is updated only after clicking next or previous button not by clicking the answer and checking in order to know whether your answer is correct or not.
@@ -126,7 +126,7 @@ function showScore()
 		document.getElementById("myTable").style.fontSize = "25px"; 
 		document.getElementById("myTable").style.color = "red";
 		document.getElementById("myTable").style.backgroundColor = "yellow";        
-		document.getElementById('myTable').innerHTML="Your Score =" + score     	
+		document.getElementById('myTable').innerHTML="Your Score =" + score     ;	
 	}
 	
 	//function checkAnswer() 
@@ -149,7 +149,7 @@ function showScore()
 			document.getElementById("myTable").style.fontSize = "15px"; 
 			document.getElementById("myTable").style.color = "red";
 			document.getElementById("myTable").style.backgroundColor = "yellow";      
-			document.getElementById('myTable').innerHTML="Congratulation! Your Answer is Correct"
+			document.getElementById('myTable').innerHTML="Congratulation! Your Answer is Correct";
 		        score = score + 1;
 				
 	        }
@@ -158,6 +158,6 @@ function showScore()
 				document.getElementById("myTable").style.fontSize = "15px"; 
 			document.getElementById("myTable").style.color = "red";
 			document.getElementById("myTable").style.backgroundColor = "yellow";      
-			document.getElementById('myTable').innerHTML="Bad Luck! Your Answer is Wrong"
+			document.getElementById('myTable').innerHTML="Bad Luck! Your Answer is Wrong";
 			}
-	}
+	
